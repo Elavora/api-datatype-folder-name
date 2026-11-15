@@ -30,7 +30,7 @@ $normalizado = $valor->value();
 ## Dependencias de runtime
 
 - PHP 8.3 ou superior
-- `elavora/api-datatype-core` `^2.0` (que exige o `elavora/api-framework` `^2.0`)
+- `elavora/api-datatype-core` `^3.0` (que exige o `elavora/api-framework` `^3.0`)
 
 ## Validacao no projeto consumidor
 
