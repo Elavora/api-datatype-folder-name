@@ -27,6 +27,15 @@ $normalizado = $valor->value();
 
 - `Elavora\Api\DataTypes\Filesystem\FolderName`
 
+## Documentação do tipo (OPTIONS)
+
+`FolderName` implementa `Elavora\Api\Framework\Contracts\DescribesType` e declara, via `documentedType()`, o que o
+OPTIONS público da API mostra para o campo:
+
+- `type`: `string`
+- `pattern`: `^[^./:*?"<>|]{1,255}$` (só descreve o formato; quem valida é `isValid()`)
+- `example`: `avatars`
+- `description`: de 1 a 255 caracteres, sem pontos e sem `/ : * ? " < > |`.
 ## Dependencias de runtime
 
 - PHP 8.4 ou superior
